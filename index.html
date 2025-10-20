@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfólio — Lucas Pereira Sampaio</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <!-- Menu fixo -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#sobre">Lucas Pereira Sampaio</a>
+      <button id="btn-toggle" class="nav-toggle" aria-label="Abrir menu">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><button id="theme-toggle" class="theme-btn" aria-label="Alternar tema">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sobre -->
+    <section id="sobre" class="section container">
+      <h1>Sobre mim</h1>
+      <p>Sou um desenvolvedor que começou a atuar recentemente na área de programação. Tenho grande interesse em criar soluções digitais e meus hobbies envolvem desenvolver sites e aplicações web. Estou sempre em busca de aprimorar meus conhecimentos, aprendendo novas tecnologias e boas práticas para evoluir continuamente como profissional.</p>
+    </section>
+
+    <!-- Formação -->
+    <section id="formacao" class="section container">
+      <h2>Formação</h2>
+      <ul>
+        <li>Atualmente estou cursando Engenharia de Software, aprofundando meus conhecimentos em desenvolvimento full stack, fundamentos da programação e boas práticas de engenharia. Busco consolidar uma base sólida para atuar de forma completa no desenvolvimento de sistemas e aplicações web.</li>
+      </ul>
+    </section>
+
+    <!-- Portfólio -->
+    <section id="portfolio" class="section container">
+      <h2>Portfólio</h2>
+      <div class="projects">
+        <!-- Exemplo de trabalho -->
+        <article class="project">
+          <h3>Projeto 1</h3>
+          <p>Descrição curta.</p>
+          <a href="https://link-para-projeto" target="_blank" rel="noopener">Ver projeto</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section container">
+      <h2>Contato</h2>
+      <form id="contactForm" novalidate>
+        <label for="name">Nome</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <!-- mensagem de retorno -->
+      <div id="formMessage" role="status" aria-live="polite" class="hidden"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> Lucas Pereira Sampaio — Desenvolvedor em formação</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
